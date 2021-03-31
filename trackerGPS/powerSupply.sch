@@ -215,20 +215,33 @@ Connection ~ 3075 3325
 Wire Wire Line
 	3075 3325 3700 3325
 $Comp
-L MAX17263LETD+:MAX17263LETD+ IC4
-U 1 1 60637B23
-P 6875 2125
-F 0 "IC4" H 7575 2603 50  0000 C CNN
-F 1 "MAX17263LETD+" H 7575 2512 50  0000 C CNN
-F 2 "MAX17263LETD+:SON40P300X300X80-15N" H 8125 2225 50  0001 L CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX17263.pdf" H 8125 2125 50  0001 L CNN
-F 4 "MAXIM INTEGRATED PRODUCTS - MAX17263LETD+ - SINGLE/MULTI-CELL FUEL GAUGE" H 8125 2025 50  0001 L CNN "Description"
-F 5 "0.8" H 8125 1925 50  0001 L CNN "Height"
-F 6 "Maxim Integrated" H 8125 1825 50  0001 L CNN "Manufacturer_Name"
-F 7 "MAX17263LETD+" H 8125 1725 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "700-MAX17263LETD+" H 8125 1625 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=700-MAX17263LETD%2B" H 8125 1525 50  0001 L CNN "Mouser Price/Stock"
-	1    6875 2125
+L Connector:USB_A J4
+U 1 1 6064EA36
+P 1550 4700
+F 0 "J4" H 1605 5167 50  0000 C CNN
+F 1 "USB_A" H 1605 5076 50  0000 C CNN
+F 2 "USB_JAE:DX4R005HJ5" H 1700 4650 50  0001 C CNN
+F 3 " ~" H 1700 4650 50  0001 C CNN
+	1    1550 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L BQ24072TRGTT:BQ24072TRGTT IC2
+U 1 1 6064F3DC
+P 6275 1725
+F 0 "IC2" H 7516 1571 50  0000 L CNN
+F 1 "BQ24072TRGTT" H 7516 1480 50  0000 L CNN
+F 2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP2.7x2.7mm_ThermalVias" H 7325 2125 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/BQ24072T" H 7325 2025 50  0001 L CNN
+F 4 "1.5A USB-Friendly Li-Ion Battery Charger and Power-Path Management IC" H 7325 1925 50  0001 L CNN "Description"
+F 5 "1" H 7325 1825 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 7325 1725 50  0001 L CNN "Manufacturer_Name"
+F 7 "BQ24072TRGTT" H 7325 1625 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-BQ24072TRGTT" H 7325 1525 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/BQ24072TRGTT/?qs=C44r%252BX3hXgJEm3wVYARorw%3D%3D" H 7325 1425 50  0001 L CNN "Mouser Price/Stock"
+F 10 "BQ24072TRGTT" H 7325 1325 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/bq24072trgtt/texas-instruments" H 7325 1225 50  0001 L CNN "Arrow Price/Stock"
+	1    6275 1725
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
