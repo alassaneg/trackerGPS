@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 5
+Sheet 5 5
 Title ""
 Date ""
 Rev ""
@@ -14,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector:USB_A J1
-U 1 1 6058E2C5
-P 3000 4675
-F 0 "J1" H 3125 4250 50  0000 C CNN
-F 1 "USB_A" H 3150 4125 50  0000 C CNN
-F 2 "USB_JAE:DX4R005HJ5" H 3150 4625 50  0001 C CNN
-F 3 " ~" H 3150 4625 50  0001 C CNN
-	1    3000 4675
-	1    0    0    -1  
-$EndComp
 Text HLabel 4725 5850 1    50   Input ~ 0
 Vcc_UC
 Text HLabel 6325 4350 0    50   Input ~ 0
@@ -35,26 +24,6 @@ Text HLabel 6325 4250 0    50   Output ~ 0
 UART_TX3_UC
 Text HLabel 6325 4000 0    50   Output ~ 0
 UART_TX2_UC
-$Comp
-L power:GND #PWR0115
-U 1 1 605A5784
-P 2900 5200
-F 0 "#PWR0115" H 2900 4950 50  0001 C CNN
-F 1 "GND" H 2905 5027 50  0000 C CNN
-F 2 "" H 2900 5200 50  0001 C CNN
-F 3 "" H 2900 5200 50  0001 C CNN
-	1    2900 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 5200 2900 5150
-Wire Wire Line
-	3000 5075 3000 5150
-Wire Wire Line
-	3000 5150 2900 5150
-Connection ~ 2900 5150
-Wire Wire Line
-	2900 5150 2900 5075
 Text HLabel 6325 4550 0    50   Output ~ 0
 UART_RTS3_UC
 Text HLabel 6325 4450 0    50   Input ~ 0
@@ -300,8 +269,6 @@ F 3 "" H 3550 4775 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3550 4675 3550 4775
-Wire Wire Line
-	3300 4475 3425 4475
 Connection ~ 3550 4475
 $Comp
 L Device:C_Small C17
@@ -339,28 +306,10 @@ Wire Wire Line
 	5600 4800 6575 4800
 Connection ~ 5175 4475
 Wire Wire Line
-	3300 4675 3475 4675
-Wire Wire Line
-	3475 4675 3475 5175
-Wire Wire Line
-	3475 5175 5975 5175
-Wire Wire Line
-	5975 5175 5975 4900
-Wire Wire Line
 	5975 4900 6575 4900
-Wire Wire Line
-	3300 4775 3375 4775
-Wire Wire Line
-	3375 4775 3375 5275
-Wire Wire Line
-	3375 5275 6100 5275
-Wire Wire Line
-	6100 5275 6100 5000
-Wire Wire Line
-	6100 5000 6575 5000
-Text Label 4300 5175 0    50   ~ 0
+Text Label 6200 4900 0    50   ~ 0
 D+
-Text Label 4300 5275 0    50   ~ 0
+Text Label 6350 5000 0    50   ~ 0
 D-
 Text HLabel 13850 4625 2    50   Output ~ 0
 RESET2
@@ -825,14 +774,6 @@ Wire Wire Line
 Wire Wire Line
 	5100 4100 5100 4150
 Wire Wire Line
-	3425 4475 3425 4125
-Wire Wire Line
-	3425 4125 2450 4125
-Wire Wire Line
-	2450 4125 2450 5600
-Wire Wire Line
-	2450 5600 4475 5600
-Wire Wire Line
 	4475 5600 4475 5325
 Wire Wire Line
 	4475 5325 6375 5325
@@ -840,7 +781,6 @@ Wire Wire Line
 	6375 5325 6375 5100
 Wire Wire Line
 	6375 5100 6575 5100
-Connection ~ 3425 4475
 Wire Wire Line
 	3425 4475 3550 4475
 Wire Wire Line
@@ -849,4 +789,19 @@ Wire Wire Line
 	12300 4350 12125 4350
 Wire Wire Line
 	12125 4600 12300 4600
+Text HLabel 5975 4900 0    50   BiDi ~ 0
+USB+
+Text HLabel 5975 5000 0    50   BiDi ~ 0
+USB-
+Wire Wire Line
+	5975 5000 6575 5000
+Wire Wire Line
+	3425 4475 3425 5600
+Wire Wire Line
+	3425 5600 4475 5600
+Text HLabel 3350 4475 0    50   Input ~ 0
+VBUS
+Wire Wire Line
+	3350 4475 3425 4475
+Connection ~ 3425 4475
 $EndSCHEMATC
