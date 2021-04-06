@@ -42,19 +42,16 @@ S 2475 3250 1400 725
 U 6058CD04
 F0 "powerSupply" 50
 F1 "powerSupply.sch" 50
-F2 "Vcc_3.3V" O R 3875 3350 50 
-F3 "Vcc_GPS_Enables" I R 3875 3850 50 
-F4 "USB+" B L 2475 3450 50 
-F5 "USB-" B L 2475 3350 50 
-F6 "Vcc_3.5V" O R 3875 3575 50 
-F7 "VBUS" O L 2475 3600 50 
+F2 "Vcc_GPS_Enables" I R 3875 3850 50 
+F3 "USB+" B L 2475 3450 50 
+F4 "USB-" B L 2475 3350 50 
+F5 "VBUS" O L 2475 3600 50 
+F6 "Vcc_3.3V_GPS" O R 3875 3350 50 
+F7 "Vcc_3.3V_UC" O R 3875 3475 50 
+F9 "Vcc_BAT_GSM" O R 3875 3650 50 
 $EndSheet
 Wire Wire Line
 	3875 3350 4425 3350
-Wire Wire Line
-	3875 3575 4025 3575
-Wire Wire Line
-	4275 3575 4275 4400
 Wire Wire Line
 	4275 4400 4525 4400
 Wire Wire Line
@@ -80,12 +77,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 4075 1625 4075
 Wire Wire Line
-	4025 3575 4025 4125
-Wire Wire Line
 	4025 4125 1700 4125
-Connection ~ 4025 3575
-Wire Wire Line
-	4025 3575 4275 3575
 Wire Wire Line
 	1625 6000 6750 6000
 Wire Wire Line
@@ -315,4 +307,12 @@ Wire Wire Line
 	4075 4525 3925 4525
 Wire Wire Line
 	4150 4675 4525 4675
+Wire Wire Line
+	3875 3475 4275 3475
+Wire Wire Line
+	4275 3475 4275 4400
+Wire Wire Line
+	3875 3650 4025 3650
+Wire Wire Line
+	4025 3650 4025 4125
 $EndSCHEMATC

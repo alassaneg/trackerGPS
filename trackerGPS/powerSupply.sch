@@ -56,7 +56,7 @@ F 33 "-40°C" H 7150 6100 50  0001 L CNN "temperature range low"
 	1    0    0    -1  
 $EndComp
 Text HLabel 8975 2600 2    50   Output ~ 0
-Vcc_3.3V
+Vcc_3.3V_GPS
 $Comp
 L power:GND #PWR0106
 U 1 1 60591B92
@@ -88,7 +88,7 @@ Vcc_GPS_Enables
 Wire Wire Line
 	6975 3075 6975 2800
 Wire Wire Line
-	6975 2800 7250 2800
+	6975 2800 7050 2800
 $Comp
 L Device:C_Small C8
 U 1 1 605A2FFD
@@ -145,7 +145,7 @@ Wire Wire Line
 Wire Wire Line
 	6700 2625 6700 2600
 Wire Wire Line
-	6700 2600 7250 2600
+	6700 2600 7050 2600
 Wire Wire Line
 	6700 2825 6700 2925
 Connection ~ 6700 2600
@@ -590,179 +590,19 @@ Wire Wire Line
 	2550 2275 2550 2550
 Wire Wire Line
 	2675 2275 2550 2275
-$Comp
-L TLV75201PDSQT:TLV75201PDSQT U2
-U 1 1 60683709
-P 6975 1100
-F 0 "U2" H 7575 1515 50  0000 C CNN
-F 1 "TLV75201PDSQT" H 7575 1424 50  0000 C CNN
-F 2 "TLV75201PDSQT:SON40P200X200X80-11N" H 8025 1200 50  0001 L CNN
-F 3 "https://www.ti.com/lit/gpn/TLV752" H 8025 1100 50  0001 L CNN
-F 4 "1-A, low-IQ, high-PSRR, adjustable, dual-channel low-dropout (LDO) voltage regulator" H 8025 1000 50  0001 L CNN "Description"
-F 5 "0.8" H 8025 900 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 8025 800 50  0001 L CNN "Manufacturer_Name"
-F 7 "TLV75201PDSQT" H 8025 700 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "595-TLV75201PDSQT" H 8025 600 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TLV75201PDSQT/?qs=xZ%2FP%252Ba9zWqbrJq5GM8Dktw%3D%3D" H 8025 500 50  0001 L CNN "Mouser Price/Stock"
-F 10 "TLV75201PDSQT" H 8025 400 50  0001 L CNN "Arrow Part Number"
-F 11 "https://www.arrow.com/en/products/tlv75201pdsqt/texas-instruments" H 8025 300 50  0001 L CNN "Arrow Price/Stock"
-	1    6975 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C18
-U 1 1 606837CD
-P 8400 1075
-F 0 "C18" H 8492 1121 50  0000 L CNN
-F 1 "470nF" H 8492 1030 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8400 1075 50  0001 C CNN
-F 3 "~" H 8400 1075 50  0001 C CNN
-	1    8400 1075
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C21
-U 1 1 60683A0E
-P 6325 1075
-F 0 "C21" H 6100 1075 50  0000 L CNN
-F 1 "10uF" H 6075 975 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6325 1075 50  0001 C CNN
-F 3 "~" H 6325 1075 50  0001 C CNN
-	1    6325 1075
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1875 2550 2550 2550
-$Comp
-L Device:R_Small R18
-U 1 1 6069042D
-P 9500 1475
-F 0 "R18" H 9400 1500 50  0000 R CNN
-F 1 "1kOhm" H 9450 1575 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9500 1475 50  0001 C CNN
-F 3 "~" H 9500 1475 50  0001 C CNN
-	1    9500 1475
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R17
-U 1 1 606908C4
-P 9500 1125
-F 0 "R17" H 9750 1100 50  0000 R CNN
-F 1 "5.56kOhm" H 9900 1200 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9500 1125 50  0001 C CNN
-F 3 "~" H 9500 1125 50  0001 C CNN
-	1    9500 1125
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0151
-U 1 1 60698497
-P 9500 1700
-F 0 "#PWR0151" H 9500 1450 50  0001 C CNN
-F 1 "GND" H 9600 1575 50  0000 C CNN
-F 2 "" H 9500 1700 50  0001 C CNN
-F 3 "" H 9500 1700 50  0001 C CNN
-	1    9500 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9500 1575 9500 1700
-Text HLabel 9850 950  2    50   Output ~ 0
-Vcc_3.5V
 Text Notes 5300 700  0    50   ~ 0
 VOUT = VFB × (1 + R1/ R2)\nVFB = 0.55V
 Wire Wire Line
-	9500 1225 9500 1250
-Wire Wire Line
-	8175 950  8250 950 
-Wire Wire Line
-	8400 950  8400 975 
-$Comp
-L power:GND #PWR0152
-U 1 1 606B70FD
-P 8400 2025
-F 0 "#PWR0152" H 8400 1775 50  0001 C CNN
-F 1 "GND" H 8405 1852 50  0000 C CNN
-F 2 "" H 8400 2025 50  0001 C CNN
-F 3 "" H 8400 2025 50  0001 C CNN
-	1    8400 2025
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8400 1175 8400 2025
-Wire Wire Line
-	8175 1050 8250 1050
-Wire Wire Line
-	8250 1050 8250 950 
-Connection ~ 8250 950 
-Wire Wire Line
-	8250 950  8400 950 
-Wire Wire Line
-	9500 950  9500 1025
-Connection ~ 8400 950 
-Wire Wire Line
-	8175 1250 9500 1250
-Connection ~ 9500 1250
-Wire Wire Line
-	9500 1250 9500 1375
-Wire Wire Line
-	9500 950  9850 950 
-Connection ~ 9500 950 
-Wire Wire Line
-	6975 1600 6800 1600
-Wire Wire Line
-	6800 1600 6800 1700
-Wire Wire Line
-	6800 1800 6975 1800
-Wire Wire Line
-	6975 1700 6800 1700
-Connection ~ 6800 1700
-Wire Wire Line
-	6800 1700 6800 1800
-Wire Wire Line
-	6325 975  6325 950 
-Wire Wire Line
-	6325 950  6975 950 
-$Comp
-L power:GND #PWR0153
-U 1 1 606F2A1A
-P 6800 1900
-F 0 "#PWR0153" H 6800 1650 50  0001 C CNN
-F 1 "GND" H 6805 1727 50  0000 C CNN
-F 2 "" H 6800 1900 50  0001 C CNN
-F 3 "" H 6800 1900 50  0001 C CNN
-	1    6800 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0154
-U 1 1 606F2AA0
-P 6325 1325
-F 0 "#PWR0154" H 6325 1075 50  0001 C CNN
-F 1 "GND" H 6330 1152 50  0000 C CNN
-F 2 "" H 6325 1325 50  0001 C CNN
-F 3 "" H 6325 1325 50  0001 C CNN
-	1    6325 1325
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6325 1175 6325 1325
-Wire Wire Line
-	5750 2600 5750 950 
-Wire Wire Line
-	5750 950  6325 950 
+	5750 2600 5750 1750
 Wire Wire Line
 	5225 2600 5750 2600
 Connection ~ 5750 2600
-Connection ~ 6325 950 
 Text Label 5325 2600 0    50   ~ 0
 3.8V_Bat_OR_5V_USB
 Wire Wire Line
 	5750 2600 6200 2600
-Wire Wire Line
-	6800 1900 6800 1800
-Connection ~ 6800 1800
 $Comp
 L Connector:USB_B_Micro J4
 U 1 1 6069F820
@@ -806,6 +646,179 @@ Wire Wire Line
 Connection ~ 8650 2600
 Wire Wire Line
 	8650 2600 8875 2600
+$Comp
+L REG113NA:REG113NA-3.3_3K U2
+U 1 1 606CD49C
+P 7100 1125
+F 0 "U2" H 7750 1390 50  0000 C CNN
+F 1 "REG113NA-3.3_3K" H 7750 1299 50  0000 C CNN
+F 2 "REG113NA:Texas_Instruments-DBV0005A-0-0-IPC_A" H 7100 1525 50  0001 L CNN
+F 3 "https://www.ti.com/lit/ds/symlink/reg113.pdf?ts=1597238737586&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FREG113%253FkeyMatch%253DREG113NA-3.3%252F3K%2526tisearch%253DSearch-EN-everything%2526usecase%253DOPN" H 7100 1625 50  0001 L CNN
+F 4 "1.5%" H 7100 1725 50  0001 L CNN "accuracy percentage"
+F 5 "No" H 7100 1825 50  0001 L CNN "automotive"
+F 6 "IC" H 7100 1925 50  0001 L CNN "category"
+F 7 "1494938" H 7100 2025 50  0001 L CNN "ciiva ids"
+F 8 "Integrated Circuits (ICs)" H 7100 2125 50  0001 L CNN "device class L1"
+F 9 "Power Management ICs" H 7100 2225 50  0001 L CNN "device class L2"
+F 10 "Voltage Regulators - Linear" H 7100 2325 50  0001 L CNN "device class L3"
+F 11 "IC REG LINEAR 3.3V 400MA SOT23-5" H 7100 2425 50  0001 L CNN "digikey description"
+F 12 "REG113NA-3.3/3KCT-ND" H 7100 2525 50  0001 L CNN "digikey part number"
+F 13 "250mV" H 7100 2625 50  0001 L CNN "dropout voltage"
+F 14 "1.45mm" H 7100 2725 50  0001 L CNN "height"
+F 15 "Yes" H 7100 2825 50  0001 L CNN "lead free"
+F 16 "f6a50f65750be32c" H 7100 2925 50  0001 L CNN "library id"
+F 17 "Texas Instruments" H 7100 3025 50  0001 L CNN "manufacturer"
+F 18 "+85°C" H 7100 3125 50  0001 L CNN "max junction temp"
+F 19 "10V" H 7100 3225 50  0001 L CNN "max supply voltage"
+F 20 "3.7V" H 7100 3325 50  0001 L CNN "min supply voltage"
+F 21 "LDO Voltage Regulators DMOS 400mA Regulator Low-Dropout\\n\\n" H 7100 3425 50  0001 L CNN "mouser description"
+F 22 "595-REG113NA-3.3/3K" H 7100 3525 50  0001 L CNN "mouser part number"
+F 23 "400-850uA" H 7100 3625 50  0001 L CNN "nominal supply current"
+F 24 "1" H 7100 3725 50  0001 L CNN "number of outputs"
+F 25 "500mA" H 7100 3825 50  0001 L CNN "output current"
+F 26 "Fixed" H 7100 3925 50  0001 L CNN "output type"
+F 27 "3.3V" H 7100 4025 50  0001 L CNN "output voltage"
+F 28 "SOT-23-5" H 7100 4125 50  0001 L CNN "package"
+F 29 "1464585805" H 7100 4225 50  0001 L CNN "release date"
+F 30 "Yes" H 7100 4325 50  0001 L CNN "rohs"
+F 31 "0mm" H 7100 4425 50  0001 L CNN "standoff height"
+F 32 "+85°C" H 7100 4525 50  0001 L CNN "temperature range high"
+F 33 "-40°C" H 7100 4625 50  0001 L CNN "temperature range low"
+	1    7100 1125
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 606CD4A3
+P 8450 1600
+F 0 "#PWR0136" H 8450 1350 50  0001 C CNN
+F 1 "GND" H 8455 1427 50  0000 C CNN
+F 2 "" H 8450 1600 50  0001 C CNN
+F 3 "" H 8450 1600 50  0001 C CNN
+	1    8450 1600
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	8400 950  9500 950 
+	8300 1525 8450 1525
+Wire Wire Line
+	8450 1525 8450 1600
+$Comp
+L Device:C_Small C18
+U 1 1 606CD4AE
+P 6650 1300
+F 0 "C18" H 6742 1346 50  0000 L CNN
+F 1 "4.7uF" H 6742 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6650 1300 50  0001 C CNN
+F 3 "~" H 6650 1300 50  0001 C CNN
+	1    6650 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C19
+U 1 1 606CD4B4
+P 8825 1350
+F 0 "C19" H 8917 1396 50  0000 L CNN
+F 1 "4.7uF" H 8917 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8825 1350 50  0001 C CNN
+F 3 "~" H 8825 1350 50  0001 C CNN
+	1    8825 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0151
+U 1 1 606CD4BA
+P 6650 1500
+F 0 "#PWR0151" H 6650 1250 50  0001 C CNN
+F 1 "GND" H 6655 1327 50  0000 C CNN
+F 2 "" H 6650 1500 50  0001 C CNN
+F 3 "" H 6650 1500 50  0001 C CNN
+	1    6650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0152
+U 1 1 606CD4C0
+P 8825 1575
+F 0 "#PWR0152" H 8825 1325 50  0001 C CNN
+F 1 "GND" H 8830 1402 50  0000 C CNN
+F 2 "" H 8825 1575 50  0001 C CNN
+F 3 "" H 8825 1575 50  0001 C CNN
+	1    8825 1575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8825 1250 8825 1125
+Connection ~ 8825 1125
+Wire Wire Line
+	8825 1450 8825 1575
+Wire Wire Line
+	6650 1125 7125 1125
+Wire Wire Line
+	6650 1400 6650 1500
+Text HLabel 9050 1125 2    50   Output ~ 0
+Vcc_3.3V_UC
+Wire Wire Line
+	8300 1125 8825 1125
+$Comp
+L power:GND #PWR0153
+U 1 1 606D2023
+P 5450 4600
+F 0 "#PWR0153" H 5450 4350 50  0001 C CNN
+F 1 "GND" H 5455 4427 50  0000 C CNN
+F 2 "" H 5450 4600 50  0001 C CNN
+F 3 "" H 5450 4600 50  0001 C CNN
+	1    5450 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 606D20A9
+P 5450 4425
+F 0 "TP8" H 5508 4545 50  0000 L CNN
+F 1 "GND" H 5508 4454 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5650 4425 50  0001 C CNN
+F 3 "~" H 5650 4425 50  0001 C CNN
+	1    5450 4425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4425 5450 4600
+Wire Wire Line
+	5850 1750 5750 1750
+Wire Wire Line
+	7200 1325 7125 1325
+Wire Wire Line
+	7125 1325 7125 1125
+Connection ~ 7125 1125
+Wire Wire Line
+	7125 1125 7200 1125
+Wire Wire Line
+	8825 1125 9050 1125
+Text HLabel 5850 1750 2    50   Output ~ 0
+Vcc_BAT_GSM
+Wire Wire Line
+	6650 1125 6650 1200
+Wire Wire Line
+	5750 1750 5750 1125
+Wire Wire Line
+	5750 1125 6650 1125
+Connection ~ 5750 1750
+Connection ~ 6650 1125
+$Comp
+L Device:R_Small R6
+U 1 1 60706140
+P 7050 2700
+F 0 "R6" H 6991 2654 50  0000 R CNN
+F 1 "0Ohm" H 6991 2745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7050 2700 50  0001 C CNN
+F 3 "~" H 7050 2700 50  0001 C CNN
+	1    7050 2700
+	-1   0    0    1   
+$EndComp
+Connection ~ 7050 2800
+Wire Wire Line
+	7050 2800 7250 2800
+Connection ~ 7050 2600
+Wire Wire Line
+	7050 2600 7250 2600
 $EndSCHEMATC
