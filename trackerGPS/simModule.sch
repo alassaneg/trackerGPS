@@ -112,9 +112,9 @@ F 3 "~" H 3575 4700 50  0001 C CNN
 	1    3575 4700
 	1    0    0    -1  
 $EndComp
-Text HLabel 5025 2650 0    50   Output ~ 0
+Text HLabel 5025 2550 0    50   Output ~ 0
 UART_GSM_CTS
-Text HLabel 5025 2550 0    50   Input ~ 0
+Text HLabel 5025 2650 0    50   Input ~ 0
 UART_GSM_RTS
 $Comp
 L RF:MFF2_E_SIM U3
@@ -333,17 +333,6 @@ F 3 "~" H 8075 2350 50  0001 C CNN
 	1    8075 2350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Ferrite_Bead_Small FB1
-U 1 1 605DC0F8
-P 7550 2200
-F 0 "FB1" V 7787 2200 50  0000 C CNN
-F 1 "Ferrite" V 7696 2200 50  0000 C CNN
-F 2 "" V 7480 2200 50  0001 C CNN
-F 3 "~" H 7550 2200 50  0001 C CNN
-	1    7550 2200
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8450 2250 8450 2200
 Wire Wire Line
@@ -402,10 +391,6 @@ RING
 Wire Wire Line
 	5000 2250 5175 2250
 Wire Wire Line
-	5025 2550 5175 2550
-Wire Wire Line
-	5025 2650 5175 2650
-Wire Wire Line
 	5025 2750 5175 2750
 Wire Wire Line
 	5025 2850 5175 2850
@@ -431,10 +416,6 @@ F 3 "" H 7725 2550 50  0001 C CNN
 	1    7725 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7375 2200 7450 2200
-Wire Wire Line
-	7650 2200 7725 2200
 Wire Wire Line
 	7725 2250 7725 2200
 Connection ~ 7725 2200
@@ -490,8 +471,6 @@ Connection ~ 3075 3550
 Wire Wire Line
 	3450 3650 5175 3650
 Connection ~ 3450 3650
-Wire Wire Line
-	2200 4475 3575 4475
 Text HLabel 5025 3000 0    50   Input ~ 0
 Sleep_GSM
 Text HLabel 5075 4150 0    50   Input ~ 0
@@ -522,10 +501,10 @@ Wire Wire Line
 	10225 4750 10550 4750
 Connection ~ 10225 4750
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0155
 U 1 1 6069DC5A
 P 10750 5050
-F 0 "#PWR?" H 10750 4800 50  0001 C CNN
+F 0 "#PWR0155" H 10750 4800 50  0001 C CNN
 F 1 "GND" H 10755 4877 50  0000 C CNN
 F 2 "" H 10750 5050 50  0001 C CNN
 F 3 "" H 10750 5050 50  0001 C CNN
@@ -534,4 +513,12 @@ F 3 "" H 10750 5050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10750 4950 10750 5050
+Wire Wire Line
+	5025 2550 5175 2550
+Wire Wire Line
+	5025 2650 5175 2650
+Wire Wire Line
+	7375 2200 7725 2200
+Wire Wire Line
+	2200 4475 3575 4475
 $EndSCHEMATC
