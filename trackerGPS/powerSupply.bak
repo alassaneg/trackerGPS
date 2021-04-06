@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -134,7 +134,7 @@ F 3 "" H 8875 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8350 2600 8875 2600
+	8350 2600 8650 2600
 Wire Wire Line
 	8875 2725 8875 2600
 Connection ~ 8875 2600
@@ -150,21 +150,10 @@ Wire Wire Line
 	6700 2825 6700 2925
 Connection ~ 6700 2600
 $Comp
-L Connector:USB_A J4
-U 1 1 6064EA36
-P 1575 2750
-F 0 "J4" H 1630 3217 50  0000 C CNN
-F 1 "USB_A" H 1630 3126 50  0000 C CNN
-F 2 "USB_JAE:DX4R005HJ5" H 1725 2700 50  0001 C CNN
-F 3 " ~" H 1725 2700 50  0001 C CNN
-	1    1575 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L BQ24072TRGTT:BQ24072TRGTT IC2
+L BQ24072TRGTT:BQ24072TRGTT IC?
 U 1 1 6064F3DC
 P 3175 2800
-AR Path="/6064F3DC" Ref="IC2"  Part="1" 
+AR Path="/6064F3DC" Ref="IC?"  Part="1" 
 AR Path="/6058CD04/6064F3DC" Ref="IC2"  Part="1" 
 F 0 "IC2" H 4400 3525 50  0000 L CNN
 F 1 "BQ24072TRGTT" H 4200 3400 50  0000 L CNN
@@ -710,8 +699,6 @@ Connection ~ 8250 950
 Wire Wire Line
 	8250 950  8400 950 
 Wire Wire Line
-	8400 950  9500 950 
-Wire Wire Line
 	9500 950  9500 1025
 Connection ~ 8400 950 
 Wire Wire Line
@@ -770,10 +757,55 @@ Wire Wire Line
 Connection ~ 5750 2600
 Connection ~ 6325 950 
 Text Label 5325 2600 0    50   ~ 0
-3.8V_Bat_5V_USB
+3.8V_Bat_OR_5V_USB
 Wire Wire Line
-	5750 2600 6700 2600
+	5750 2600 6200 2600
 Wire Wire Line
 	6800 1900 6800 1800
 Connection ~ 6800 1800
+$Comp
+L Connector:USB_B_Micro J4
+U 1 1 6069F820
+P 1575 2750
+F 0 "J4" H 1630 3217 50  0000 C CNN
+F 1 "USB_B_Micro" H 1630 3126 50  0000 C CNN
+F 2 "USB_JAE:DX4R005HJ5" H 1725 2700 50  0001 C CNN
+F 3 "~" H 1725 2700 50  0001 C CNN
+	1    1575 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 606CA98B
+P 6200 2325
+F 0 "TP4" H 6258 2445 50  0000 L CNN
+F 1 "TP_chg" H 6258 2354 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6400 2325 50  0001 C CNN
+F 3 "~" H 6400 2325 50  0001 C CNN
+	1    6200 2325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2325 6200 2600
+Connection ~ 6200 2600
+Wire Wire Line
+	6200 2600 6700 2600
+$Comp
+L Connector:TestPoint TP5
+U 1 1 606CD78E
+P 8650 2500
+F 0 "TP5" H 8708 2620 50  0000 L CNN
+F 1 "TP_3v3_GPS" H 8708 2529 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8850 2500 50  0001 C CNN
+F 3 "~" H 8850 2500 50  0001 C CNN
+	1    8650 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 2500 8650 2600
+Connection ~ 8650 2600
+Wire Wire Line
+	8650 2600 8875 2600
+Wire Wire Line
+	8400 950  9500 950 
 $EndSCHEMATC
