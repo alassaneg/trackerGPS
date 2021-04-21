@@ -1,0 +1,31 @@
+N° de ligne	Code Commande	Qté :	Référence Fabricant	Fabricant / Description	Prix unitaire	Prix
+1	1653025	10.0	CRCW0805604RFKEA	VISHAY  Résistance à puce CMS, Couche épaisse, 604 ohm, ± 1%, 125 mW, 0805 [2012 Metric], Couche épaisse	0.0835	0,84
+2	1652950	10.0	CRCW0805200KFKEA	VISHAY  Résistance à puce CMS, Couche épaisse, 200 kohm, ± 1%, 125 mW, 0805 [2012 Metric], Couche épaisse	0.0835	0,84
+3	3008698	3.0	BQ24072TRGTT	TEXAS INSTRUMENTS  Chargeur de batterie pour 1 cellule de Li-Ion batterie, 6,4V entrée, 4.2V/1,5A, VQFN-16	2.4000	7,2
+4	9233750	30.0	RC0805JR-070RL	YAGEO  Résistance zéro ohm, Cavalier, Cavalier, 0805 [2012 Metric], Couche épaisse, 125 mW, 2 A, CMS	0.0107	0,32
+5	1759196	10.0	MC0805N270J500CT	MULTICOMP PRO  Condensateur céramique multicouche CMS, 27 pF, 50 V, 0805 [2012 Metric], ± 5%, C0G / NP0, Série MC	0.0606	0,61
+6	2346968	20.0	CGA4J1X7R1E475K125AC	TDK  Condensateur céramique multicouche CMS, 4.7 µF, 25 V, 0805 [2012 Metric], ± 10%, X7R, Série CGA	0.3040	6,08
+7	3013485	20.0	CL21B106KOQNNNE	SAMSUNG ELECTRO-MECHANICS  Condensateur céramique multicouche CMS, 10 µF, 16 V, 0805 [2012 Metric], ± 10%, X7R, CL Series	0.2470	4,94
+8	2303722	10.0	ERJ6ENF4702V	PANASONIC  Résistance à puce CMS, Couche épaisse, 47 kohm, ± 1%, 125 mW, 0805 [2012 Metric], Couche épaisse	0.0750	0,75
+9	2099239	10.0	KPT-2012SGC	KINGBRIGHT  LED, Basse consommation, Vert, CMS, 0805 [Métrique 2012], 20 mA, 2.2 V, 568 nm	0.1540	1,54
+10	3122325	9.0	REG113NA-3.3/3K	TEXAS INSTRUMENTS  Régulateur LDO Tension fixe, entrée 1,8 V à 10 V, Dropout 300 mV, Sortie 3.3 V, 400 mA, SOT-23-5	2.7200	24,48
+11	2101342	4.0	ABM8G-48.000MHZ-18-D2Y-T	ABRACON  Cristal, 48 MHz, CMS, 3.2mm x 2.5mm, 30 ppm, 18 pF, 20 ppm, Série ABM8G	0.9310	3,72
+12	1740665	30.0	08053C104KAT2A	AVX  Condensateur céramique multicouche CMS, 0.1 µF, 25 V, 0805 [2012 Metric], ± 10%, X7R	0.0687	2,06
+13	2768697	5.0	PIC32MM0256GPM028-I/ML	MICROCHIP  Microcontrôleur PIC/DSPIC, PIC32 Family PIC32MM Series Microcontrollers, PIC32, 32 bits, 25 MHz	1.8700	9,35
+14	2134453	3.0	4,50302E+11	WURTH ELEKTRONIK  Commutateur à glissière, SPDT, On-On, Traversant, 500 mA	1.9600	5,88
+15	1688077	10.0	U.FL-R-SMT-1(10)	HIROSE(HRS)  Connecteur coaxial / RF, Coaxial U.FL, Jack droit, Montage en surface vertical, 50 ohm, Laiton	0.8430	8,43
+16	2821273	10.0	C0805C100K5RACTU	KEMET  Condensateur céramique multicouche CMS, 10 pF, 50 V, 0805 [2012 Metric], ± 10%, X7R, Série C KEMET	0.1370	1,37
+17	2211193	5.0	C3216X5R1A107M160AC	TDK  Condensateur céramique multicouche CMS, 100 µF, 10 V, 1206 [3216 Metric], ± 20%, X5R, Série C	1.2100	6,05
+18	2280689	10.0	0805YC105KAT2A	AVX  Condensateur céramique multicouche CMS, 1 µF, 16 V, 0805 [2012 Metric], ± 10%, X7R, Série LT	0.1060	1,06
+19	2821116	20.0	C0805C330K5RACTU	KEMET  Condensateur céramique multicouche CMS, 33 pF, 50 V, 0805 [2012 Metric], ± 10%, X7R, Série C KEMET	0.1350	2,7
+20	2447668	10.0	MCWR08X4992FTL	MULTICOMP PRO  Résistance à puce CMS, Couche épaisse, 49.9 kohm, ± 1%, 125 mW, 0805 [2012 Metric], Couche épaisse	0.0091	0,09
+21	2138942	10.0	CRCW08051K91FKEA.	VISHAY  Résistance à puce CMS, Couche épaisse, 1.91 kohm, ± 1%, 125 mW, 0805 [2012 Metric], Couche épaisse	0.0877	0,88
+22	1907650	5.0	BC847BW,115	NEXPERIA  Transistor simple bipolaire (BJT), À usage général, NPN, 45 V, 100 mA, 200 mW, SOT-323	0.1240	0,62
+23	2447553	10.0	MCWR08X1002FTL	MULTICOMP PRO  Résistance à puce CMS, Couche épaisse, 10 kohm, ± 1%, 125 mW, 0805 [2012 Metric], Couche épaisse	0.0094	0,09
+24	2303545	10.0	ERJ6ENF9090V	PANASONIC  Résistance à puce CMS, Couche épaisse, 909 ohm, ± 1%, 125 mW, 0805 [2012 Metric], Couche épaisse	0.0692	0,69
+						90,59
+				90.59		
+				90.59		
+				0.00		
+				18.12		
+				108.70		
