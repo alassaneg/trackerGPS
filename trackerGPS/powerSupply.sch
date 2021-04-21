@@ -60,12 +60,12 @@ Vcc_3.3V_GPS
 $Comp
 L power:GND #PWR0106
 U 1 1 60591B92
-P 5100 3850
-F 0 "#PWR0106" H 5100 3600 50  0001 C CNN
-F 1 "GND" H 5105 3677 50  0000 C CNN
-F 2 "" H 5100 3850 50  0001 C CNN
-F 3 "" H 5100 3850 50  0001 C CNN
-	1    5100 3850
+P 5450 5025
+F 0 "#PWR0106" H 5450 4775 50  0001 C CNN
+F 1 "GND" H 5455 4852 50  0000 C CNN
+F 2 "" H 5450 5025 50  0001 C CNN
+F 3 "" H 5450 5025 50  0001 C CNN
+	1    5450 5025
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -87,8 +87,6 @@ Text HLabel 6975 3075 3    50   Input ~ 0
 Vcc_GPS_Enables
 Wire Wire Line
 	6975 3075 6975 2800
-Wire Wire Line
-	6975 2800 7050 2800
 $Comp
 L Device:C_Small C8
 U 1 1 605A2FFD
@@ -145,8 +143,6 @@ Wire Wire Line
 Wire Wire Line
 	6700 2625 6700 2600
 Wire Wire Line
-	6700 2600 7050 2600
-Wire Wire Line
 	6700 2825 6700 2925
 Connection ~ 6700 2600
 $Comp
@@ -173,25 +169,25 @@ $EndComp
 $Comp
 L Connector:TestPoint TP1
 U 1 1 60650D48
-P 5100 3700
-F 0 "TP1" H 5158 3820 50  0000 L CNN
-F 1 "Battery_GND" H 5158 3729 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 5300 3700 50  0001 C CNN
-F 3 "~" H 5300 3700 50  0001 C CNN
-	1    5100 3700
+P 5450 4875
+F 0 "TP1" H 5508 4995 50  0000 L CNN
+F 1 "Battery_GND" H 5508 4904 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 5650 4875 50  0001 C CNN
+F 3 "~" H 5650 4875 50  0001 C CNN
+	1    5450 4875
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 3700 5100 3850
+	5450 4875 5450 5025
 $Comp
 L Connector:TestPoint TP2
 U 1 1 60651B8E
-P 4625 2975
-F 0 "TP2" H 4683 3095 50  0000 L CNN
-F 1 "Battery+" H 4683 3004 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 4825 2975 50  0001 C CNN
-F 3 "~" H 4825 2975 50  0001 C CNN
-	1    4625 2975
+P 5375 3250
+F 0 "TP2" H 5433 3370 50  0000 L CNN
+F 1 "Battery+" H 5433 3279 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.0x2.0mm" H 5575 3250 50  0001 C CNN
+F 3 "~" H 5575 3250 50  0001 C CNN
+	1    5375 3250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -305,9 +301,6 @@ Wire Wire Line
 Connection ~ 5000 2600
 Wire Wire Line
 	5000 2600 5000 2550
-Wire Wire Line
-	4625 2975 4625 3150
-Connection ~ 4625 3150
 $Comp
 L Device:C_Small C7
 U 1 1 606667AA
@@ -563,7 +556,7 @@ L Device:R_Small R14
 U 1 1 606821EB
 P 3825 3975
 F 0 "R14" H 3725 3950 50  0000 R CNN
-F 1 "900ohm" H 3725 4025 50  0000 R CNN
+F 1 "909 ohm" H 3725 4025 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3825 3975 50  0001 C CNN
 F 3 "~" H 3825 3975 50  0001 C CNN
 	1    3825 3975
@@ -602,7 +595,7 @@ Connection ~ 5750 2600
 Text Label 5325 2600 0    50   ~ 0
 3.8V_Bat_OR_5V_USB
 Wire Wire Line
-	5750 2600 6200 2600
+	5750 2600 6075 2600
 $Comp
 L Connector:USB_B_Micro J4
 U 1 1 6069F820
@@ -758,31 +751,31 @@ Wire Wire Line
 Text HLabel 9050 1125 2    50   Output ~ 0
 Vcc_3.3V_UC
 Wire Wire Line
-	8300 1125 8825 1125
+	8300 1125 8500 1125
 $Comp
 L power:GND #PWR0153
 U 1 1 606D2023
-P 5450 4600
-F 0 "#PWR0153" H 5450 4350 50  0001 C CNN
-F 1 "GND" H 5455 4427 50  0000 C CNN
-F 2 "" H 5450 4600 50  0001 C CNN
-F 3 "" H 5450 4600 50  0001 C CNN
-	1    5450 4600
+P 6050 4750
+F 0 "#PWR0153" H 6050 4500 50  0001 C CNN
+F 1 "GND" H 6055 4577 50  0000 C CNN
+F 2 "" H 6050 4750 50  0001 C CNN
+F 3 "" H 6050 4750 50  0001 C CNN
+	1    6050 4750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint TP8
 U 1 1 606D20A9
-P 5450 4425
-F 0 "TP8" H 5508 4545 50  0000 L CNN
-F 1 "GND" H 5508 4454 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5650 4425 50  0001 C CNN
-F 3 "~" H 5650 4425 50  0001 C CNN
-	1    5450 4425
+P 6050 4575
+F 0 "TP8" H 6108 4695 50  0000 L CNN
+F 1 "GND" H 6108 4604 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 6250 4575 50  0001 C CNN
+F 3 "~" H 6250 4575 50  0001 C CNN
+	1    6050 4575
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5450 4425 5450 4600
+	6050 4575 6050 4750
 Wire Wire Line
 	5850 1750 5750 1750
 Wire Wire Line
@@ -809,16 +802,106 @@ L Device:R_Small R6
 U 1 1 60706140
 P 7050 2700
 F 0 "R6" H 6991 2654 50  0000 R CNN
-F 1 "0Ohm" H 6991 2745 50  0000 R CNN
+F 1 "0ohm" H 6991 2745 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7050 2700 50  0001 C CNN
 F 3 "~" H 7050 2700 50  0001 C CNN
 	1    7050 2700
 	-1   0    0    1   
 $EndComp
+$Comp
+L Device:LED_Small D3
+U 1 1 606DD3B4
+P 6075 3350
+F 0 "D3" H 6075 3585 50  0000 C CNN
+F 1 "LED_Small" H 6075 3494 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 6075 3350 50  0001 C CNN
+F 3 "~" V 6075 3350 50  0001 C CNN
+	1    6075 3350
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7050 2600
 Connection ~ 7050 2800
 Wire Wire Line
-	7050 2800 7250 2800
-Connection ~ 7050 2600
-Wire Wire Line
 	7050 2600 7250 2600
+Wire Wire Line
+	6700 2600 7050 2600
+Wire Wire Line
+	7050 2800 7250 2800
+Wire Wire Line
+	6975 2800 7050 2800
+$Comp
+L Device:R_Small R7
+U 1 1 606DFE75
+P 6075 2950
+F 0 "R7" H 6016 2904 50  0000 R CNN
+F 1 "1.9kOhm" H 6016 2995 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6075 2950 50  0001 C CNN
+F 3 "~" H 6075 2950 50  0001 C CNN
+	1    6075 2950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6075 2850 6075 2600
+Connection ~ 6075 2600
+Wire Wire Line
+	6075 2600 6200 2600
+Wire Wire Line
+	6075 3050 6075 3250
+$Comp
+L power:GND #PWR0154
+U 1 1 606E54AA
+P 6075 3550
+F 0 "#PWR0154" H 6075 3300 50  0001 C CNN
+F 1 "GND" H 6080 3377 50  0000 C CNN
+F 2 "" H 6075 3550 50  0001 C CNN
+F 3 "" H 6075 3550 50  0001 C CNN
+	1    6075 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6075 3450 6075 3550
+$Comp
+L Connector:TestPoint TP9
+U 1 1 606E9B98
+P 8500 1025
+F 0 "TP9" H 8558 1145 50  0000 L CNN
+F 1 "TP_3v3_UC" H 8558 1054 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 8700 1025 50  0001 C CNN
+F 3 "~" H 8700 1025 50  0001 C CNN
+	1    8500 1025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 1025 8500 1125
+Connection ~ 8500 1125
+Wire Wire Line
+	8500 1125 8825 1125
+$Comp
+L 450302014072:450302014072 S1
+U 1 1 606EA603
+P 5250 3300
+F 0 "S1" V 6025 3200 50  0000 L CNN
+F 1 "450302014072" V 6150 2975 50  0000 L CNN
+F 2 "450302014072:450302014072" H 6000 3400 50  0001 L CNN
+F 3 "http://www.farnell.com/datasheets/1913864.pdf" H 6000 3300 50  0001 L CNN
+F 4 "Through Hole Slide Switch SPDT On-On 100 mA@ 42 V dc Slide" H 6000 3200 50  0001 L CNN "Description"
+F 5 "2.65" H 6000 3100 50  0001 L CNN "Height"
+F 6 "Wurth Elektronik" H 6000 3000 50  0001 L CNN "Manufacturer_Name"
+F 7 "450302014072" H 6000 2900 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "710-450302014072" H 6000 2800 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=710-450302014072" H 6000 2700 50  0001 L CNN "Mouser Price/Stock"
+F 10 "7856478" H 6000 2600 50  0001 L CNN "RS Part Number"
+F 11 "http://uk.rs-online.com/web/p/products/7856478" H 6000 2500 50  0001 L CNN "RS Price/Stock"
+	1    5250 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 3300 5375 3300
+Wire Wire Line
+	5375 3300 5375 3250
+Wire Wire Line
+	5050 3300 5050 3150
+Wire Wire Line
+	4625 3150 5050 3150
+Connection ~ 4625 3150
 $EndSCHEMATC
